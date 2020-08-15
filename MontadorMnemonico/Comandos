@@ -1,0 +1,34 @@
+NR  8-BITS      COMANDO     FUNÇÃO
+0   00000000    ADD R0 R1   Adiciona o valor de R1 ao valor de R0 em R0
+1   00000001    ADD R0 @R1  Adiciona o endereço de R1 ao valor de R0 em R0
+2   00000010    ADD R0 #D   Adiciona o decimal ao valor de R0 em R0
+3   00000011    ADD R0 #D+8 Adiciona o decimal maior que 8 bits ao R0 em R0
+4   00000100    ADD R0 101  Adiciona o BINÁRIO 101 ao valor de R0 em R0
+5   00000101    ADD R0 B+8  Adiciona o BINÁRIO maior que 8 bits ao valor de R0 em R0
+6   00000110    SUB R0 R1   Subtrai o valor de R1 ao valor de R0 em R0
+7   00000111    SUB R0 @R1  Subtrai o endereço de R1 ao valor de R0 em R0
+8   00001000    SUB R0 #D   Subtrai o decimal ao valor de R0 em R0
+9   00001001    SUB R0 #D+8 Subtrai o decimal maior que 8 bits ao R0 em R0
+10  00001010    SUB R0 101  Subtrai o BINÁRIO 101 ao valor de R0 em R0
+11  00001011    SUB R0 B+8  Subtrai o BINÁRIO maior que 8 bits ao valor de R0 em R0
+12  00001100    MULT R0 R1  Multiplica o valor de R1 ao valor de R0 em R0
+13  00001101    MULT R0 @R1 Multiplica o endereço de R1 ao valor de R0 em R0
+14  00001110    MULT R0 #D  Multiplica o decimal ao valor de R0 em R0
+15  00001111    MULT R0 #D+8Multiplica o decimal maior que 8 bits ao R0 em R0
+16  00010000    MULT R0 101 Multiplica o BINÁRIO 101 ao valor de R0 em R0
+17  00010001    MULT R0 B+8 Multiplica o BINÁRIO maior que 8 bits ao valor de R0 em R0
+18  00010010    DIV R0 R1   Divide o valor de R1 ao valor de R0 em R0
+19  00010011    DIV R0 @R1  Divide o endereço de R1 ao valor de R0 em R0
+20  00010100    DIV R0 #D   Divide o decimal ao valor de R0 em R0
+21  00010101    DIV R0 #D+8 Divide o decimal maior que 8 bits ao valor de R0 em R0
+22  00010110    DIV R0 101  Divide o BINÁRIO 101 ao valor de R0 em R0
+23  00010111    DIV R0 B+8  Divide o BINÁRIO maior que 8 bits ao valor de R0 em R0
+24  00011000    DESQ R0     Desloca os bits de R0 para a esquerda (multiplica o valor por 2)
+25  00011001    DDIR R0     Desloca os bits de R0 para a direita (divide o valor por 2)
+26  00011010    JMP NrLinha Pula para a linha NrLinha
+27  00011011    CALL Label  Chama o label e processa a partir da linha armazenada
+
+
+
+    
+255 11111111    HALT        Finaliza o programa
